@@ -6,8 +6,8 @@ config.interval = 60;
 // Comment out to use port provided by the Node environment
 config.port = 8080;
 
-// Removes the query (everything after the '?') from the url, defaults to false
-config.removeQuery = false;
+// Keeps the query (everything after the '?') from the url, defaults to false
+config.keepQuery = false;
 
 // Archives feeds to Archive.org by default
 config.archiveEndpoint = "https://web.archive.org/save/";

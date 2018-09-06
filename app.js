@@ -34,7 +34,7 @@ async function runRequests(){
 			return current;
 		});
 
-		if (!removeQuery){
+		if (!keepQuery){
 			url = url.split('?')[0];
 		}
 
