@@ -1,0 +1,21 @@
+{
+  "name": "feed-auto-archive",
+  "version": "1.0.0",
+  "description": "A simple Node program to automatically archive RSS/Atom feeds to Archive.org in near-realtime.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BynariStar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BynariStar/Feed-Auto-Archive"
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "rss-feed-emitter": "^2.0.0"
+  }
+}
