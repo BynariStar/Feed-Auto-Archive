@@ -72,7 +72,7 @@ feeds.forEach(feed => {
 });
 
 feeder.on('new-item', ({ link }) => {
-	addToQueue(link)
+	if (link) addToQueue(link)
 });
 
 let server = http.createServer();
