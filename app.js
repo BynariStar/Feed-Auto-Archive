@@ -3,7 +3,7 @@ const request	= require('request-promise-native');
 const RssFeedEmitter = require('rss-feed-emitter');
 
 const feeds = require('./feeds');
-const { interval, port = process.env.port, archiveEndpoint, removeQuery } = require('./config');
+const { interval, port = process.env.port, archiveEndpoint, keepQuery } = require('./config');
 
 let feeder = new RssFeedEmitter();
 
