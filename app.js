@@ -42,16 +42,20 @@ async function runRequests(){
 			console.log(`${ current }: Redirected to ${ url }`);
 		}
 
-		let res = await request({
-			url: archiveEndpoint + url,
-			followAllRedirects: true
-		})
-		.then(res => {
-			return 'Success';
-		})
-		.catch(err => {
-			return err.message;
-		});
+		if (process.env.NODE_ENV !== 'production') {
+			var res = 'Didn\'t archive, not in production';
+		} else {
+			var res = await request({
+				url: archiveEndpoint + url,
+				followAllRedirects: true
+			})
+			.then(res => {
+				return 'Success';
+			})
+			.catch(err => {
+				return err.message;
+			});
+		}
 
 		queue.pop();
 		
