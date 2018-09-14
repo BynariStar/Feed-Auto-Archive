@@ -79,6 +79,8 @@ feeder.on('new-item', ({ link }) => {
 	if (link) addToQueue(link)
 });
 
-let server = http.createServer();
+let server = http.createServer((req, res) => {
+	res.end();
+});
 
 server.listen({ port: port }, () => console.log(`Listening on port ${ port }!`));
