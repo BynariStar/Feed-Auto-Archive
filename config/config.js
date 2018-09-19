@@ -4,7 +4,7 @@ let config = {};
 config.interval = 60;
 
 // Comment out to use port provided by the Node environment
-config.port = 8080;
+//config.port = 8080;
 
 // Keeps the query (everything after the '?') from the url, defaults to false
 config.keepQuery = false;
