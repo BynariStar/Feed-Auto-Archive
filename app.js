@@ -68,13 +68,6 @@ async function runRequests(){
 	}
 }
 
-feeds.forEach(feed => {
-	feeder.add({
-		url: feed,
-		refresh: interval || 60
-	});
-});
-
 feeder.on('new-item', ({ link }) => {
 	if (link) addToQueue(link)
 });
@@ -84,3 +77,10 @@ let server = http.createServer((req, res) => {
 });
 
 server.listen({ port: port }, () => console.log(`Listening on port ${ port }!`));
+
+feeds.forEach(feed => {
+	feeder.add({
+		url: feed,
+		refresh: interval || 60
+	});
+});
