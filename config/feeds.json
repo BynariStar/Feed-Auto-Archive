@@ -1,3 +1,8 @@
-[
-    "http://feeds.arstechnica.com/arstechnica/index"
-]
+{
+    "default": [
+        "https://example.com/rss"
+    ],
+    "keepQuery": [
+        "https://example2.com/rss"
+    ]
+}

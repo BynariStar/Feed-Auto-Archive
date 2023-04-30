@@ -14,8 +14,9 @@
     "url": "https://github.com/BynariStar/Feed-Auto-Archive"
   },
   "dependencies": {
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.5",
-    "rss-feed-emitter": "^2.0.0"
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "rss-feed-emitter": "^3.2.3",
+    "sqlite3": "^5.1.6"
   }
 }
